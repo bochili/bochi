@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>博驰</title>
+    <link
+      href="http://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.cdnfonts.com/css/jetbrains-mono"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    /> -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: "Material Icons Round";
+        font-style: normal;
+        font-weight: 400;
+        src: url(MaterialIconsRound-Regular.woff2) format("woff2");
+      }
+
+      .material-icons {
+        font-family: "Material Icons Round";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: "liga";
+        -webkit-font-smoothing: antialiased;
+      }
+      .left {
+        position: absolute;
+        top: 20vh;
+        left: 5%;
+        /* font-family: "SF Pro Display", sans-serif; */
+        /* font-family: "JetBrains Mono", Courier, monospace; */
+      }
+      .left-header {
+      }
+      .left-header img {
+        float: left;
+      }
+      .left-header-text {
+        font-size: 50px;
+        line-height: 70px;
+        padding-left: 70px;
+      }
+      .left-introduce {
+        padding-left: 70px;
+        margin-top: 20px;
+        max-width: 50vh;
+        text-indent: 40px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .left-button {
+        margin-left: 70px;
+        margin-top: 20px;
+      }
+      .button {
+        background: #FFF;
+        border: #000 2px solid;
+        color: #000000;
+        display: inline-block;
+        font-size: 17px;
+        border-radius: 1000px;
+        min-width: 110px;
+        height: 42px;
+        line-height: 42px;
+        text-align: end;
+        padding-right: 15px;
+        transition: all 0.3s;
+        position: relative;
+        margin-right: 8px;
+        max-width: 130px;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+      .button span {
+        float: left;
+        line-height: 42px;
+        padding-left: 15px;
+      }
+      .button:hover {
+        background: #000;
+        color: #FFF;
+        transition: all 0.3s;
+      }
+      .button svg {
+        position: absolute;
+        top: 5px;
+        left: 12px;
+      }
+      .code {
+        color: rgb(71, 68, 69);
+        background-color: rgb(248, 250, 253);
+        padding: 40px;
+        border-radius: 20px;
+        font-family: "JetBrains Mono", Courier, monospace;
+        line-height: 25px;
+      }
+      .right {
+        position: absolute;
+        top: 20vh;
+        right: 20%;
+      }
+      @media screen and (max-width: 1400px) {
+        .right {
+          max-width: 500px;
+          right: 50px;
+        }
+      }
+      @media screen and (max-width: 1035px) {
+        .left {
+          position: static;
+          margin: auto;
+          margin-top: 10vh;
+          max-width: 80%;
+        }
+        .right {
+          position: static;
+          margin: auto;
+          margin-top: 40px;
+          max-width: 80%;
+        }
+      }
+      @media screen and (max-width: 612px) {
+        .left,
+        .right {
+          max-width: 95%;
+        }
+        .left{
+            margin-top: 40px;
+        }
+        .left-introduce,
+        .left-button {
+          padding: 0 20px 0 20px;
+          margin-left: 0;
+          max-width: 100%;
+          text-indent: 0;
+
+        }
+        .left-header-text {
+          font-size: 33px;
+          line-height: 40px;
+          padding-left: 20px;
+          padding-top: 10px;
+        }
+        .left-header img {
+          width: 30px;
+          height: 30px;
+          margin-left: 20px;
+          float: none;
+        }
+        .button{
+            display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left animate__animated animate__fadeInLeft">
+      <div class="left-header">
+        <img src="1.png" width="50px" height="50px" />
+        <p class="left-header-text">
+          Hi there,<br />
+          I'm 博驰.
+        </p>
+      </div>
+      <div class="left-introduce">
+        A student from XPC ( 河北科技工程职业技术大学 ) ,Major is IOT
+        Application Technology.
+      </div>
+      <div class="left-button">
+        <a class="button" href="https://blog.bochi.ink" target="_blank"
+          ><span class="material-icons">format_quote</span>博客</a
+        >
+        <!-- <a class="button" href="https://gallery.bochi.ink" target="_blank"><span class="material-icons">landscape</span>相册</a> -->
+        <a class="button" href="https://github.com/bochili" target="_blank" onmouseover="hoverGithub()" onmouseleave="hoverGithubLeave()">
+          <svg id="github"
+            fill="#000"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="30px"
+            height="30px"
+            fill-rule="evenodd"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z"
+            /></svg
+          >Github</a
+        >
+      </div>
+    </div>
+    <div class="right animate__animated animate__fadeInRight">
+      <div class="code">
+        <span style="color: rgb(219, 76, 88)">function</span>
+        <span style="color: rgb(129, 83, 191)">findMe</span
+        ><span style="color: rgb(32, 106, 194)">(){</span>
+        <br />
+        &nbsp;&nbsp;<span style="color: rgb(219, 76, 88)">let</span> name
+        <span style="color: rgb(219, 76, 88)">=</span>
+        <span style="color: rgb(52, 80, 119)">"博驰"</span>;
+        <br />
+        &nbsp;&nbsp;<span style="color: rgb(219, 76, 88)">let</span> myQQ
+        <span style="color: rgb(219, 76, 88)">=</span>
+        <span style="color: rgb(52, 80, 119)">"1175161483"</span>;
+        <br />
+        &nbsp;&nbsp;<span style="color: rgb(219, 76, 88)">let</span> myEmail
+        <span style="color: rgb(219, 76, 88)">=</span>
+        <span style="color: rgb(52, 80, 119)">"bochili@foxmail.com"</span>;
+        <br />
+        &nbsp;&nbsp;<span style="color: rgb(32, 106, 194)">console</span>.<span
+          style="color: rgb(129, 83, 191)"
+          >log</span
+        ><span style="color: rgb(232, 121, 46)">(</span
+        ><span style="color: rgb(52, 80, 119)">"Name:"</span>
+        <span style="color: rgb(219, 76, 88)">+</span> name<span
+          style="color: rgb(232, 121, 46)"
+          >)</span
+        >;
+        <br />
+        &nbsp;&nbsp;<span style="color: rgb(32, 106, 194)">console</span>.<span
+          style="color: rgb(129, 83, 191)"
+          >log</span
+        ><span style="color: rgb(232, 121, 46)">(</span
+        ><span style="color: rgb(52, 80, 119)">"QQ:"</span>
+        <span style="color: rgb(219, 76, 88)">+</span> myQQ<span
+          style="color: rgb(232, 121, 46)"
+          >)</span
+        >;
+        <br />
+        &nbsp;&nbsp;<span style="color: rgb(32, 106, 194)">console</span>.<span
+          style="color: rgb(129, 83, 191)"
+          >log</span
+        ><span style="color: rgb(232, 121, 46)">(</span
+        ><span style="color: rgb(52, 80, 119)">"Email:"</span>
+        <span style="color: rgb(219, 76, 88)">+</span> myEmail<span
+          style="color: rgb(232, 121, 46)"
+          >)</span
+        >;
+        <br />
+        <span style="color: rgb(32, 106, 194)">}</span>
+        <br />
+        <span style="color: rgb(129, 83, 191)">findMe</span
+        ><span style="color: rgb(32, 106, 194)">()</span>;
+      </div>
+    </div>
+    <script>
+        function hoverGithub(){
+            document.getElementById("github").setAttribute("fill","#FFF");
+        }
+        function hoverGithubLeave(){
+            document.getElementById("github").setAttribute("fill","#000");
+        }
+    </script>
+  </body>
+</html>
