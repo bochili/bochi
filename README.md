@@ -1,2 +1,0 @@
-# bochi
-www.bochi.ink
