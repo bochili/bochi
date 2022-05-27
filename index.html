@@ -10,12 +10,14 @@
       * {
         margin: 0;
         padding: 0;
-      }@font-face {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 400;
-    src: local('SF Pro Display'), url('SFPRODISPLAYREGULAR.woff') format('woff');
-}
+      }
+      @font-face {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        src: local("SF Pro Display"),
+          url("SFPRODISPLAYREGULAR.woff") format("woff");
+      }
       @font-face {
         font-family: "Material Icons Round";
         font-style: normal;
@@ -23,11 +25,12 @@
         src: url(MaterialIconsRound-Regular.woff2) format("woff2");
       }
       @font-face {
-    font-family: 'JetBrains Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: local('JetBrains Mono'), url('JetbrainsMonoRegular-RpvmM.woff') format('woff');
-}
+        font-family: "JetBrains Mono";
+        font-style: normal;
+        font-weight: 400;
+        src: local("JetBrains Mono"),
+          url("JetbrainsMonoRegular-RpvmM.woff") format("woff");
+      }
       .material-icons {
         font-family: "Material Icons Round";
         font-weight: normal;
@@ -47,7 +50,7 @@
         position: absolute;
         top: 20vh;
         left: 5%;
-        /* font-family: "SF Pro Display", sans-serif; */
+        font-family: "SF Pro Display", sans-serif;
         /* font-family: "JetBrains Mono", Courier, monospace; */
       }
       .left-header {
@@ -73,7 +76,7 @@
         margin-top: 20px;
       }
       .button {
-        background: #FFF;
+        background: #fff;
         border: #000 2px solid;
         color: #000000;
         display: inline-block;
@@ -98,7 +101,7 @@
       }
       .button:hover {
         background: #000;
-        color: #FFF;
+        color: #fff;
         transition: all 0.3s;
       }
       .button svg {
@@ -144,8 +147,8 @@
         .right {
           max-width: 95%;
         }
-        .left{
-            margin-top: 40px;
+        .left {
+          margin-top: 40px;
         }
         .left-introduce,
         .left-button {
@@ -153,7 +156,6 @@
           margin-left: 0;
           max-width: 100%;
           text-indent: 0;
-
         }
         .left-header-text {
           font-size: 33px;
@@ -167,8 +169,8 @@
           margin-left: 20px;
           float: none;
         }
-        .button{
-            display: block;
+        .button {
+          display: block;
         }
       }
     </style>
@@ -191,8 +193,15 @@
           ><span class="material-icons">format_quote</span>博客</a
         >
         <!-- <a class="button" href="https://gallery.bochi.ink" target="_blank"><span class="material-icons">landscape</span>相册</a> -->
-        <a class="button" href="https://github.com/bochili" target="_blank" onmouseover="hoverGithub()" onmouseleave="hoverGithubLeave()">
-          <svg id="github"
+        <a
+          class="button"
+          href="https://github.com/bochili"
+          target="_blank"
+          onmouseover="hoverGithub()"
+          onmouseleave="hoverGithubLeave()"
+        >
+          <svg
+            id="github"
             fill="#000"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"
@@ -263,12 +272,12 @@
       </div>
     </div>
     <script>
-        function hoverGithub(){
-            document.getElementById("github").setAttribute("fill","#FFF");
-        }
-        function hoverGithubLeave(){
-            document.getElementById("github").setAttribute("fill","#000");
-        }
+      function hoverGithub() {
+        document.getElementById("github").setAttribute("fill", "#FFF");
+      }
+      function hoverGithubLeave() {
+        document.getElementById("github").setAttribute("fill", "#000");
+      }
     </script>
   </body>
 </html>
